@@ -1,8 +1,19 @@
 aid: triveni-bio
 name: Triveni Bio
-description: 'Triveni Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Triveni Bio is a clinical-stage biotechnology company developing first-in-class
+  antibody therapeutics for immunological and inflammatory (I&I) disorders, built on a
+  genetics-informed approach to target discovery combined with advanced antibody engineering.
+  Its lead program TRIV-509 is a dual-specific monoclonal antibody against kallikreins 5
+  and 7 (KLK5/7) for moderate-to-severe atopic dermatitis, addressing barrier dysfunction,
+  inflammation and itch; TRIV-573 is a half-life-extended, second-generation bispecific
+  that pairs the KLK5/7 mechanism with anti-interleukin-13 (IL-13) and entered Phase 1 in
+  2026. The pipeline also includes an antibody inhibitor of trypsin 1 and 2 for hereditary
+  pancreatitis driven by PRSS1 mutations. The company launched with a $92M Series A, raised
+  a $115M Series B, and closed a $65M Series C in June 2026, and was named a Fierce 15
+  biotech of 2025. Triveni Bio is a therapeutics developer, not a software vendor: it
+  publishes no public API, developer portal, SDK or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/triveni-bio/refs/heads/main/apis.yml
+image: https://triveni.bio/wp-content/uploads/2025/09/cropped-triveni-icon-1-192x192.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +23,15 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Pharmaceuticals
+- Therapeutics
+- Antibodies
+- Immunology
+- Drug Development
+- Clinical Trials
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/triveni-bio-domain-security.yml
 - type: Website
+  url: https://triveni.bio/
+- type: About
+  url: https://triveni.bio/about/
+- type: Blog
+  url: https://triveni.bio/news/
+- type: BlogRSS
+  url: https://triveni.bio/feed/
+- type: PrivacyPolicy
+  url: https://triveni.bio/privacy-policy/
+- type: TermsOfService
+  url: https://triveni.bio/terms-and-conditions/
+- type: Careers
+  url: https://triveni.bio/about#careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/triveni-bio
+- type: Contact
+  url: https://triveni.bio/contact/
+- type: Email
+  url: mailto:info@triveni.bio
+- type: SecondaryMarket
   url: https://forgeglobal.com/triveni-bio_stock/
+- type: LLMsTxt
+  url: llms/triveni-bio-llms.txt
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Triveni Bio is a clinical-stage antibody therapeutics developer whose entire public site
+    is seven WordPress pages (home, about, science, pipeline, news, contact, legal) with no
+    developer, technology, or partner-integration section at all; every API-host, docs-host
+    and /.well-known/ probe 404'd and no api./developer./docs. subdomain resolves.
+  evidence:
+    - url: https://triveni.bio/page-sitemap.xml
+      status: 200
+    - url: https://triveni.bio/developers
+      status: 404
+    - url: https://triveni.bio/openapi.json
+      status: 404
+    - url: https://triveni.bio/.well-known/agent-card.json
+      status: 404
+    - url: https://triveni.bio/llms.txt
+      status: 404
+  checked: '2026-08-05'
