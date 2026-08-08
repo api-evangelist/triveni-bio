@@ -1,0 +1,21 @@
+{
+  "repo": "triveni-bio",
+  "feeds": [
+    {
+      "source": "https://triveni.bio/about/",
+      "feed_url": "https://triveni.bio/about/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://triveni.bio/news/",
+      "feed_url": "https://triveni.bio/news/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-06T14:08:46Z"
+}
