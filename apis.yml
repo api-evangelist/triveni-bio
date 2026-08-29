@@ -13,6 +13,17 @@ description: 'Triveni Bio is a clinical-stage biotechnology company developing f
   biotech of 2025. Triveni Bio is a therapeutics developer, not a software vendor: it
   publishes no public API, developer portal, SDK or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/triveni-bio/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://triveni.bio/wp-content/uploads/2025/09/cropped-triveni-icon-1-192x192.png
 x-type: company
 x-source: harvest:secondary-market
