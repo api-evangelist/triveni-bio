@@ -24,6 +24,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://triveni.bio/wp-content/uploads/2025/09/cropped-triveni-icon-1-192x192.png
 x-type: company
 x-source: harvest:secondary-market
